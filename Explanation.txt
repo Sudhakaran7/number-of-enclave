@@ -1,0 +1,70 @@
+Given a 2D array A, each cell is 0 (representing sea) or 1 (representing land)
+A move consists of walking from one land square 4-directionally to another land square, or off the boundary of the grid.
+Return the number of land squares in the grid for which we cannot walk off the boundary of the grid in any number of moves.
+
+ Input Description:
+ First line contains n the size of 2D array, (2<n<1000)
+ Rest line contains, nxn 2D array.
+ 
+ Output Description:
+ Print the number of land squares in the grid for which we cannot walk off the boundary of the grid in any number of moves.
+ 
+ Sample Input:
+4
+0 0 0 0
+1 0 1 0
+0 1 1 0
+0 0 0 0
+
+Sample Output:
+3
+
+Explanation:
+There are three 1s that are enclosed by 0s, and one 1 that isn't enclosed because its on the boundary.
+
+Sample Input:
+2
+1 1
+1 0
+
+Sample Output:
+0
+
+Sample Input:
+3
+0 0 0
+1 0 1
+0 0 0
+
+Sample Output:
+0
+
+Sample Input:
+5
+0 0 0 0 0
+1 0 1 0 1
+0 1 1 1 0
+0 0 0 0 0
+1 1 0 0 0
+
+Sample Output:
+4
+
+Sample Input:
+4
+1 1 1 1
+0 0 1 0
+1 0 0 1
+0 0 1 0
+
+Sample Output:
+0
+
+Sample Input:
+3
+0 0 0
+1 0 0
+0 0 0
+
+Sample Output:
+0
